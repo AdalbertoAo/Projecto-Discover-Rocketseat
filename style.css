@@ -11,21 +11,21 @@
   --surface-color: rgba(255, 255, 255, 0.1);
  --surface-color-hover:rgba(255,255,255, 0.05);
  --icon-color:rgba(255, 255, 255, 0.2);
- --switch-bg-url: url(./img/MoonStars.svg);
+ --switch-bg-url: url(./assets/img/MoonStars.svg);
 
 }
 .light {
-  background: url(./img/bg-mobile-light.jpg) no-repeat top center/cover;
+  background: url(./assets/img/bg-mobile-light.jpg) no-repeat top center/cover;
   --text-color: black;
   --border-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
    --surface-color-hover:rgba(0,0,0,0.02);
     --icon-color:rgba(0,0,0, 0.1);
-     --switch-bg-url: url(./img/Sun.svg);
+     --switch-bg-url: url(./assets/img/Sun.svg);
 }
 html {
   /*color image repeat position /size*/
-  background: url(./img/bg-mobile.jpg) no-repeat top center/cover;
+  background: url(./assets/img/bg-mobile.jpg) no-repeat top center/cover;
 }
 body * {
   font-family: "Inter Tight", sans-serif;
