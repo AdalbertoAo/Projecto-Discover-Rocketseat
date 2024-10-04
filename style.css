@@ -7,6 +7,7 @@
 :root {
   /* o -- indica que isso e uma var e usa-se com a seguinte sintaxe var(name)*/
   --text-color: white;
+  --bg-url: url(./assets/img/bg-mobile.jpg) no-repeat top center/cover;
   --border-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
  --surface-color-hover:rgba(255,255,255, 0.05);
@@ -15,7 +16,7 @@
 
 }
 .light {
-  background: url(./assets/img/bg-mobile-light.jpg) no-repeat top center/cover;
+  --bg-url: url(./assets/img/bg-mobile-light.jpg) no-repeat top center/cover;
   --text-color: black;
   --border-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
@@ -25,7 +26,8 @@
 }
 html {
   /*color image repeat position /size*/
-  background: url(./assets/img/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url);
+  height: 100vh;
 }
 body * {
   font-family: "Inter Tight", sans-serif;
@@ -147,4 +149,12 @@ footer {
   text-align: center;
 }
 
-
+@media (min-width: 700px)
+{
+  :root {
+    --bg-url: url(./assets/img/bg-desktop.jpg);
+  }
+  .light{
+    --bg-url: url(./assets/img/bg-desktop-light.jpg);
+  }
+}
